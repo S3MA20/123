@@ -1,0 +1,7 @@
+
+<button (click)="fetchMovies()">Fetch Movies</button>
+
+<div class="movies-wrapper">
+    <app-movie-card *ngFor="let movie of movies" [movie]="movie"></app-movie-card>
+
+</div>

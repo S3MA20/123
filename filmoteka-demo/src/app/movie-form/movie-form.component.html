@@ -1,0 +1,24 @@
+
+<div class="movie-form">
+    <div class="form-element">
+        <label>Title</label>
+        <input type="text" [(ngModel)]="movie.title">
+    </div>
+    <div class="form-element">
+        <label>Rating</label>
+        <input type="text" [(ngModel)]="movie.rating">
+    </div>
+    <div class="form-element">
+        <label>Lenght</label>
+        <input type="number" [(ngModel)]="movie.lenght">
+    </div>
+    <div class="form-element">
+        <label>Description</label>
+        <textarea [(ngModel)]="movie.description" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <button (click)="cancelMovie()" class="cancel-btn">Cancel</button>
+    <button (click)="saveMovie()" class="save-btn">Save</button>
+</div>
+
+

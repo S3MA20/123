@@ -1,0 +1,26 @@
+.movie-card {
+    height: 230px;
+    box-shadow: 10px 10px 56px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 56px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 56px -8px rgba(0,0,0,0.75);
+    &__image{
+        background-image: url("https://m.media-amazon.com/images/M/MV5BNjQ1MzQ4M2ItMDkxYy00M2VkLWE4YjUtOTdjYTY1NDJlNjUxXkEyXkFqcGdeQXVyMzcwNjA5Mzg@._V1_SX300.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    &__title {
+        color: black;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        margin-bottom: 7px;
+        color: #ccc;
+        font-size: 10px;
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

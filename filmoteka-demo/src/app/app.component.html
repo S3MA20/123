@@ -1,0 +1,7 @@
+Fetch number: {{count}}
+
+<app-movie-form></app-movie-form>
+<div class="search-movie">
+    <input [(ngModel)]="query" (keyup.enter)="searchMovies()" type="text" placeholder="Search for movie">
+</div>
+<app-movies [movies]="filteredMovies" (countChange)="incrementCounter"></app-movies>
